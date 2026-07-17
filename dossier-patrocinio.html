@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dossier de Patrocinio — CB Vía XX 2026/2027</title>
+<meta name="description" content="Dossier de patrocinio del Club Baloncesto Vía XX, temporada 2026/2027.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2323262B'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' fill='%23E4DECF' text-anchor='middle'%3EXX%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/fonts-inline.css">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  /* ===== Dossier-only styles (no las metemos en style.css del sitio) ===== */
+  body{ background:var(--paper); }
+  .doc{ max-width:820px; margin:0 auto; padding:0 clamp(1.25rem,4vw,2.5rem); }
+
+  .doc-cover{
+    background:linear-gradient(160deg, var(--granite) 0%, var(--granite-2) 100%);
+    color:var(--paper); padding:clamp(3rem,8vw,4.5rem) 0 clamp(2.5rem,6vw,3.5rem);
+  }
+  .doc-cover .doc{ display:flex; flex-direction:column; gap:1.1rem; }
+  .doc-cover .crest{ width:56px; height:56px; }
+  .doc-cover .kicker{ font-weight:700; font-size:0.78rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--rubric); }
+  .doc-cover h1{ font-size:clamp(1.9rem,5vw,2.8rem); line-height:1.12; max-width:20ch; margin:0; }
+  .doc-cover h1 span{ color:var(--rubric); }
+  .doc-cover p{ color:rgba(247,245,240,0.75); max-width:52ch; margin:0; font-size:1.02rem; }
+  .doc-cover .meta{ display:flex; flex-wrap:wrap; gap:1.5rem 2.2rem; margin-top:0.8rem; }
+  .doc-cover .meta div dt{ font-size:0.68rem; letter-spacing:0.04em; text-transform:uppercase; color:rgba(247,245,240,0.55); margin:0 0 0.25rem; }
+  .doc-cover .meta div dd{ margin:0; font-weight:600; }
+
+  .doc-section{ padding:clamp(2.4rem,6vw,3.2rem) 0; border-bottom:1px solid var(--line); }
+  .doc-section:last-of-type{ border-bottom:none; }
+  .doc-section .eyebrow{ display:block; }
+  .doc-section h2{ font-size:clamp(1.3rem,3vw,1.7rem); margin:0.4rem 0 1rem; }
+  .doc-section p{ color:var(--ink-dim); max-width:62ch; margin:0 0 0.9rem; }
+  .doc-section p:last-child{ margin-bottom:0; }
+
+  .keyfacts{ display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:1.2rem; margin-top:1.5rem; }
+  .keyfacts .fact{ border-top:3px solid var(--rubric); padding-top:0.7rem; }
+  .keyfacts .fact dt{ font-weight:700; font-size:0.68rem; letter-spacing:0.04em; text-transform:uppercase; color:var(--ink-dim); margin:0 0 0.3rem; }
+  .keyfacts .fact dd{ margin:0; font-weight:600; font-size:1rem; }
+
+  .why-grid{ display:grid; grid-template-columns:1fr; gap:1.4rem; margin-top:1.5rem; }
+  @media (min-width:640px){ .why-grid{ grid-template-columns:repeat(2,1fr); } }
+  .why-grid .item h3{ font-size:1rem; font-weight:700; margin:0 0 0.4rem; }
+  .why-grid .item p{ margin:0; font-size:0.94rem; }
+
+  .tiers{ display:flex; flex-direction:column; gap:1.1rem; margin-top:1.5rem; }
+  .tier{ border:1px solid var(--line); border-radius:8px; padding:1.4rem 1.6rem; background:var(--paper); }
+  .tier.tier--top{ border-color:var(--rubric); border-width:1.5px; }
+  .tier__head{ display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:0.6rem 1.2rem; }
+  .tier__name{ font-weight:700; font-size:1.08rem; }
+  .tier__slots{ font-family:var(--sans); font-weight:700; font-size:0.7rem; letter-spacing:0.03em; text-transform:uppercase; color:var(--rubric); }
+  .tier__range{ font-family:'Space Mono', monospace; font-weight:600; font-size:1rem; color:var(--ink); white-space:nowrap; }
+  .tier__desc{ color:var(--ink-dim); font-size:0.92rem; margin:0.6rem 0 0.8rem; max-width:56ch; }
+  .tier__includes{ list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:0.5rem 1.4rem; }
+  .tier__includes li{ font-size:0.86rem; color:var(--ink); }
+  .tier__includes li::before{ content:"— "; color:var(--rubric); }
+
+  .doc-footer{
+    background:var(--granite); color:rgba(247,245,240,0.7);
+    padding:1.8rem 0; margin-top:0;
+  }
+  .doc-footer .doc{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:0.8rem; font-size:0.85rem; }
+  .doc-footer a{ color:var(--paper); text-decoration:none; font-weight:600; }
+  .doc-footer .legend{ font-family:'Cinzel',serif; letter-spacing:0.1em; color:var(--brass); }
+
+  .doc-cover__actions{ margin-top:0.3rem; }
+  .doc-cover__actions button{ font-family:inherit; border:none; cursor:pointer; }
+
+  @media print{
+    .nav, .doc-cover__actions{ display:none; }
+    .doc-section{ break-inside:avoid; }
+    body{ background:#fff; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg class="brand__crest" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.3"/><text x="20" y="26" text-anchor="middle" font-family="Cinzel, serif" font-size="14" fill="currentColor">XX</text></svg>
+      <span class="brand__name">CB VÍA XX</span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav__toggle-input">
+    <label for="nav-toggle" class="nav__toggle" aria-label="Abrir menú"><span></span><span></span><span></span></label>
+    <ul class="nav__links">
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="directiva.html">Directiva</a></li>
+      <li><a href="patrocina.html" aria-current="page">Patrocina</a></li>
+    </ul>
+    <a class="nav__cta" href="index.html#unete">Únete</a>
+  </div>
+</nav>
+
+<header class="doc-cover">
+  <div class="doc">
+    <svg class="crest" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="none" stroke="rgba(247,245,240,0.4)" stroke-width="1"/><text x="20" y="26" text-anchor="middle" font-family="Cinzel, serif" font-size="13" fill="#a8412a">XX</text></svg>
+    <span class="kicker">Dossier de patrocinio</span>
+    <h1>Club Baloncesto <span>Vía XX</span></h1>
+    <p>Temporada de debut 2026/2027 en 3ª División Autonómica de FEGABA. Un club nuevo con una identidad propia: el camino romano entre Lugo y A Coruña.</p>
+    <dl class="meta">
+      <div><dt>Categoría</dt><dd>3ª División · FEGABA</dd></div>
+      <div><dt>Temporada</dt><dd>2026 / 2027</dd></div>
+      <div><dt>Sede</dt><dd>A Coruña</dd></div>
+      <div><dt>Contacto</dt><dd>cbviaxx@gmail.com</dd></div>
+    </dl>
+    <div class="doc-cover__actions">
+      <button class="btn btn--ghost" onclick="window.print()">Descargar en PDF</button>
+    </div>
+  </div>
+</header>
+
+<main class="doc">
+
+  <section class="doc-section">
+    <span class="eyebrow">El club</span>
+    <h2>Un nombre que no pertenece a una sola ciudad</h2>
+    <p>Vía XX era la calzada romana de veinte millas que unía Lucus Augusti y Brigantium — hoy, Lugo y A Coruña. El club nace en A Coruña en 2026, impulsado por nueve socios fundadores, la mayoría estudiantes activos en la UDC. Tomamos ese nombre porque el proyecto nace pensado para conectar ambas ciudades, no solo para representar a una.</p>
+    <p>Debuta en 3ª División Autonómica de FEGABA en la temporada 2026/2027, con vocación de crecer en socios, categoría y visibilidad en los próximos años.</p>
+    <div class="keyfacts">
+      <div class="fact"><dt>Fundación</dt><dd>2026, A Coruña</dd></div>
+      <div class="fact"><dt>Directiva</dt><dd>9 socios fundadores</dd></div>
+      <div class="fact"><dt>Origen</dt><dd>Liga interna de baloncesto UDC</dd></div>
+      <div class="fact"><dt>Plantilla</dt><dd>~12 jugadores</dd></div>
+    </div>
+  </section>
+
+  <section class="doc-section">
+    <span class="eyebrow">Por qué patrocinar</span>
+    <h2>Visibilidad real, comunidad concreta</h2>
+    <p>Somos un club nuevo, en su primera temporada. Creemos que eso también es una oportunidad: asociarse a un proyecto deportivo local desde su nacimiento es algo que muchas veces se valora más que sumarse a un club ya consolidado.</p>
+    <div class="why-grid">
+      <div class="item">
+        <h3>Equipación</h3>
+        <p>Presencia directa en camiseta y pantalón, visible en cada partido y cada foto del equipo durante toda la temporada.</p>
+      </div>
+      <div class="item">
+        <h3>Comunidad universitaria</h3>
+        <p>Vínculo directo con la UDC a través del origen del club y de gran parte de su plantilla y directiva.</p>
+      </div>
+      <div class="item">
+        <h3>Doble mercado</h3>
+        <p>El nombre y el origen del club conectan de forma natural con empresas que operan entre Lugo y A Coruña, no solo en una de las dos ciudades.</p>
+      </div>
+      <div class="item">
+        <h3>Prensa y redes</h3>
+        <p>Cobertura de la puesta en marcha del club en medios locales y actividad propia en redes sociales durante toda la temporada.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="doc-section">
+    <span class="eyebrow">Espacios disponibles</span>
+    <h2>Paquetes de patrocinio</h2>
+    <p>El espacio exacto (frontal, espalda, pantalón, pretemporada) y las condiciones económicas se cierran caso por caso — escríbenos y hablamos.</p>
+
+    <div class="tiers">
+      <div class="tier tier--top">
+        <div class="tier__head">
+          <span class="tier__name">Patrocinador Principal</span>
+          <span class="tier__slots">1 espacio · exclusivo</span>
+        </div>
+        <span class="tier__range">A consultar</span>
+        <p class="tier__desc">Naming asociado al equipo y logo en la posición más visible de la camiseta (frontal). Un único patrocinador principal por temporada.</p>
+        <ul class="tier__includes">
+          <li>Logo frontal camiseta</li>
+          <li>Mención en nombre/naming del equipo</li>
+          <li>Presencia destacada en web y redes</li>
+        </ul>
+      </div>
+
+      <div class="tier">
+        <div class="tier__head">
+          <span class="tier__name">Patrocinador Oficial</span>
+          <span class="tier__slots">2–3 espacios</span>
+        </div>
+        <span class="tier__range">A consultar</span>
+        <p class="tier__desc">Logo en espalda de camiseta o en pantalón. Buena visibilidad sin exclusividad total.</p>
+        <ul class="tier__includes">
+          <li>Logo espalda camiseta o pantalón</li>
+          <li>Presencia en web</li>
+          <li>Mención en redes sociales</li>
+        </ul>
+      </div>
+
+      <div class="tier">
+        <div class="tier__head">
+          <span class="tier__name">Colaborador</span>
+          <span class="tier__slots">Varios espacios</span>
+        </div>
+        <span class="tier__range">A consultar</span>
+        <p class="tier__desc">Logo en material del equipo (chándal, banda, pabellón) y en la página de patrocinadores de la web.</p>
+        <ul class="tier__includes">
+          <li>Logo en chándal / banda / pabellón</li>
+          <li>Presencia en página de patrocinadores</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="doc-section">
+    <span class="eyebrow">Contacto</span>
+    <h2>Hablemos</h2>
+    <p>Si tu empresa quiere formar parte del club desde su primera temporada, escríbenos a <a href="mailto:cbviaxx@gmail.com" style="color:var(--rubric); font-weight:600;">cbviaxx@gmail.com</a>. Ajustamos el espacio y las condiciones a lo que tenga sentido para ambas partes.</p>
+  </section>
+
+</main>
+
+<footer class="doc-footer">
+  <div class="doc">
+    <span>CB Vía XX · Fundado en 2026 · A Coruña — <a href="mailto:cbviaxx@gmail.com">cbviaxx@gmail.com</a></span>
+    <span class="legend">LVCVS AVGVSTI — XX — BRIGANTIVM</span>
+  </div>
+</footer>
+
+</body>
+</html>
